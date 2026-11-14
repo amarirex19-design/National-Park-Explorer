@@ -1,0 +1,21 @@
+park_code,name,designation,unit_type,states,visitors_2025,dark_sky_certified,timed_entry_required,has_entrance_fees,bird_species,alerts_active,latitude,longitude,nps_status,fee_free
+abli,Abraham Lincoln Birthplace National Historical Park,National Historical Park,Historical Parks,KY,212899.0,False,False,False,131.0,0,37.5858662,-85.67330523,unit,True
+acad,Acadia National Park,National Park,National Parks,ME,4079318.0,False,True,True,215.0,2,44.409286,-68.247501,unit,False
+adam,Adams National Historical Park,National Historical Park,Historical Parks,MA,48726.0,False,True,True,,4,42.2553961,-71.01160356,unit,False
+afbg,African Burial Ground National Monument,National Monument,Monuments,NY,32465.0,False,False,False,,0,40.71452681,-74.00447358,unit,True
+agfo,Agate Fossil Beds National Monument,National Monument,Monuments,NE,16827.0,False,False,False,131.0,3,42.42170419,-103.753886,unit,True
+alag,Alagnak Wild River,Wild River,Rivers & Riverways,AK,375.0,False,False,False,123.0,0,59.05180188,-156.112002,unit,True
+alfl,Alibates Flint Quarries National Monument,National Monument,Monuments,TX,8054.0,False,False,False,32.0,1,35.5819662,-101.6717008,unit,True
+alpo,Allegheny Portage Railroad National Historic Site,National Historic Site,Historic Sites,PA,162905.0,False,False,False,122.0,1,40.42977467,-78.57431622,unit,True
+amch,Amache National Historic Site,National Historic Site,Historic Sites,CO,8113.0,False,False,False,,2,38.04962,-102.32903,unit,True
+amis,Amistad National Recreation Area,National Recreation Area,Recreation Areas,TX,734293.0,False,False,False,255.0,4,29.53539777,-101.075821,unit,True
+ande,Andersonville National Historic Site,National Historic Site,Historic Sites,GA,61850.0,False,False,False,,0,32.19831758,-84.12988898,unit,True
+ania,Aniakchak National Monument & Preserve,National Monument & Preserve,Preserves & Reserves,AK,247.0,False,False,False,134.0,0,56.85317675,-157.5544362,unit,True
+anjo,Andrew Johnson National Historic Site,National Historic Site,Historic Sites,TN,43203.0,False,False,False,,2,36.15624509,-82.83709021,unit,True
+anti,Antietam National Battlefield,National Battlefield,Battlefields & Military Parks,MD,161006.0,False,False,True,137.0,1,39.46763452,-77.73828017,unit,False
+apco,Appomattox Court House National Historical Park,National Historical Park,Historical Parks,VA,77496.0,False,False,False,93.0,1,37.38022164,-78.79856982,unit,True
+apis,Apostle Islands National Lakeshore,National Lakeshore,Seashores & Lakeshores,WI,261009.0,False,False,False,253.0,5,46.96240467,-90.66045665,unit,True
+appa,Appalachian National Scenic Trail,National Scenic Trail,Trails,CT|GA|MA|MD|ME|NC|NH|NJ|NY|PA|TN|VA|VT|WV,6215118.0,False,False,False,38.0,2,40.41029575,-76.4337548,unit,True
+arch,Arches National Park,National Park,National Parks,UT,1511740.0,True,False,True,188.0,0,38.72261844,-109.5863666,unit,False
+arho,"Arlington House, The Robert E. Lee Memorial",Park Unit,Other,VA,363284.0,False,False,False,,1,38.88220215,-77.0734787,unit,True
+arpo,Arkansas Post National Memorial,National Memorial,Memorials,AR,27674.0,False,False,False,111.0,0,34.00389998,-91.30837178,unit,True
