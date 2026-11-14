@@ -51,38 +51,41 @@ export default function ParkRow({
   };
 
   return (
-    <Pressable
-      testID={`park-${park.park_code}`}
-      accessibilityRole="button"
-      accessibilityLabel={`Open ${park.name} details`}
-      onPress={onOpen}
-      style={({ pressed }) => [
+    <View
+      style={[
         styles.card,
         { backgroundColor: colors.card, borderColor: colors.border },
-        pressed && styles.pressed,
       ]}
     >
-      <View style={[styles.iconWrap, { backgroundColor: colors.secondary }]}>
-        <Feather name="map" size={19} color={colors.primary} />
-      </View>
-      <View style={styles.copy}>
-        <Text style={[styles.type, { color: colors.primary }]} numberOfLines={1}>
-          {park.unit_type.toUpperCase()}
-        </Text>
-        <Text style={[styles.name, { color: colors.foreground }]} numberOfLines={2}>
-          {park.name}
-        </Text>
-        <View style={styles.meta}>
-          <Feather name="map-pin" size={12} color={colors.mutedForeground} />
-          <Text style={[styles.metaText, { color: colors.mutedForeground }]} numberOfLines={1}>
-            {formatStates(park.states)}
-          </Text>
-          <View style={[styles.dot, { backgroundColor: colors.border }]} />
-          <Text style={[styles.metaText, { color: colors.mutedForeground }]}>
-            {formatCompact(park.visitors_2025)} visits
-          </Text>
+      <Pressable
+        testID={`park-${park.park_code}`}
+        accessibilityRole="button"
+        accessibilityLabel={`Open ${park.name} details`}
+        onPress={onOpen}
+        style={({ pressed }) => [styles.openArea, pressed && styles.pressed]}
+      >
+        <View style={[styles.iconWrap, { backgroundColor: colors.secondary }]}>
+          <Feather name="map" size={19} color={colors.primary} />
         </View>
-      </View>
+        <View style={styles.copy}>
+          <Text style={[styles.type, { color: colors.primary }]} numberOfLines={1}>
+            {park.unit_type.toUpperCase()}
+          </Text>
+          <Text style={[styles.name, { color: colors.foreground }]} numberOfLines={2}>
+            {park.name}
+          </Text>
+          <View style={styles.meta}>
+            <Feather name="map-pin" size={12} color={colors.mutedForeground} />
+            <Text style={[styles.metaText, { color: colors.mutedForeground }]} numberOfLines={1}>
+              {formatStates(park.states)}
+            </Text>
+            <View style={[styles.dot, { backgroundColor: colors.border }]} />
+            <Text style={[styles.metaText, { color: colors.mutedForeground }]}>
+              {formatCompact(park.visitors_2025)} visits
+            </Text>
+          </View>
+        </View>
+      </Pressable>
       <Pressable
         testID={`save-${park.park_code}`}
         accessibilityRole="button"
@@ -97,7 +100,7 @@ export default function ParkRow({
           color={saved ? colors.primary : colors.mutedForeground}
         />
       </Pressable>
-    </Pressable>
+    </View>
   );
 }
 
@@ -111,6 +114,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 12,
     marginBottom: 10,
+  },
+  openArea: {
+    flex: 1,
+    minWidth: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
   },
   pressed: {
     opacity: 0.82,
